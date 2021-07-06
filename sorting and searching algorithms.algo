@@ -1,0 +1,36 @@
+ALGORITHM searching
+VAR
+aux,p,i:INTEGER
+find: BOOLEAN
+BEGIN
+PROCEDURE insertion sort (var t:ARRAY_OF INTEGER [n],n:INTEGER)
+VAR
+aux,p,i:INTEGER
+BEGIN
+aux:=t[i];/* aux is the inserted value in the right place of the table.
+we shift all the values ​​of the array <aux in the right to empty it * /
+p:=i-1;
+while(p>0 and t[p]>aux) do
+t[p+1]:+ t[p];
+p:=p-1;
+END whilefinalem
+t[p+1]:=aux; /* finalley the value is inserted in its right place.
+END
+
+FUNCTION research element1(t:ARRAY_OF INTEGER[length], e:INTEGER): boolean
+VAR 
+i: INTEGER;
+find:boolean;
+BEGIN
+i=0
+find:false;// variable found which returns true if I find my item
+while (i<leng (t) and find=false) do
+if (t[i]=e) then
+find:=true;// if it finds e it leaves the loop
+else
+i:=i+1;//if it does not find e it continues the search
+end if
+end while
+return find;
+END
+END
